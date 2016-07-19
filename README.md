@@ -16,3 +16,7 @@ mvn jetty:run
 
 ## 部署
 可以将项目部署在支持JSR 356的服务器，例如Tomcat、Jetty的最新版本。由于用到tail命令，该项目需要部署在Linux系统上。
+
+
+
+ServerEndpoint这些注解是JavaEE7的内容，记得Tomcat得要8.0才能支持。Tomcat7的话，WebSocket是靠Servlet继承WebSocketServlet 来实现的
